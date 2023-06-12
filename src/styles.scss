@@ -1,0 +1,67 @@
+@use "angular-material-css-vars" as mat-css-vars;
+@use "@angular/material" as mat;
+@import "@angular/material/theming";
+@include mat-css-vars.init-material-css-vars();
+
+@include mat-css-vars.mat-css-set-palette-defaults(
+  mat.$light-blue-palette,
+  "primary"
+);
+@include mat-css-vars.mat-css-set-palette-defaults(mat.$pink-palette, "accent");
+@include mat-css-vars.mat-css-set-palette-defaults(mat.$red-palette, "warn");
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.isLightTheme .logonav {
+  background-size: 65px;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-image: url(https://media.jessecarlbergphotography.com/images/logo.png);
+}
+
+.isDarkTheme .logonav {
+  background-size: 65px;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-image: url(https://media.jessecarlbergphotography.com/images/logowhite.png);
+}
+
+.navlogo {
+  height: 50px;
+  width: 75px;
+}
+
+.tbar-spacer {
+  flex: 1 1 auto;
+}
+
+.isLightTheme .sstheader {
+  font-weight: 100;
+  font-size: larger;
+  padding-right: 5px;
+  color: #973195;
+  padding-left: 15px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.isDarkTheme .sstheader {
+  font-weight: 100;
+  font-size: larger;
+  padding-right: 5px;
+  color: #c03cbe;
+  padding-left: 15px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}

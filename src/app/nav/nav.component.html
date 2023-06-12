@@ -1,0 +1,21 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <span class="logonav navlogo" routerLink="/"></span>
+    <span>
+      <strong class="sstheader" routerLink="/">Themepicker Example</strong>
+    </span>
+    <mat-nav-list role="navigation">
+      <a
+        mat-list-item
+        routerLink="/"
+        routerLinkActive="active-link"
+        aria-label="Link that takes you to HomePage"
+      >
+        Home
+      </a>
+    </mat-nav-list>
+
+    <span class="tbar-spacer"></span>
+    <theme-picker></theme-picker>
+  </mat-toolbar-row>
+</mat-toolbar>
